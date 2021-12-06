@@ -1,20 +1,21 @@
+import { Link } from "react-router-dom";
 
 
-const Article = ()=> {
+const Article = ({article})=> {
 
 
 
     return (
         <div className="card--product wow fadeInDown">
                             <div className="card--product__illustration">
-                               <a href="details--articles.html"><img src="images/jupe.png" alt="products--images"/></a> 
+                              <Link to={`/article/${article.id}`}> <a href="details--articles.html"><img src={article.image} alt="products--images"/></a>  </Link >
                             </div>
 
                             <div className="card--product__description">
-                                <h3>Jupe volante</h3>
+                                <h3>{article.title}</h3>
 
                                 <div className="prices">
-                                    <p><strong>3500 F</strong> / unité</p>
+                                    <p><strong>{article.price} F</strong> / unité</p>
                                     <p><strong>1500 F</strong> / a partir de 5 unités</p>
                                 </div>
 

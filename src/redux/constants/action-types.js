@@ -1,0 +1,6 @@
+
+
+export const ActionConstants = {
+    LOAD_ALL_PRODUCT : 'LOAD_ALL_PRODUCT',
+    SELECT_SINGLE_PRODUCT : 'SELECT_SINGLE_PRODUCT'
+}
