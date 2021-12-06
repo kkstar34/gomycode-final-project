@@ -14,7 +14,7 @@ const Nav = ()=> {
                     </div>
     
                     <div className="navigation--top__logo">
-                        <a href="index.html"><img src="icones/Groupe-1.png" alt="logo"/></a>
+                        <a href="index.html"><img  src={process.env.PUBLIC_URL + 'images/Groupe-1.png'} alt="logo"/></a>
                     </div>
     
                     <div className="navigation--top__items">

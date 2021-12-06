@@ -15,7 +15,7 @@ const NavDetails = () => {
                 </div>
 
                 <div className="navigation--top__logo">
-                    <a href="index.html"><img src="icones/Groupe-1.png" alt="logo"/></a>
+                    <a href="index.html"><img src={process.env.PUBLIC_URL + '/images/Groupe-1.png'} alt="logo"/></a>
                 </div>
 
                 <div className="navigation--top__items">
@@ -34,7 +34,7 @@ const NavDetails = () => {
                     </form>
 
                     <div className="box-user">
-                        <div className="userIcon"><img src="icones/Ellipse 1.png" alt="user"/></div>
+                        <div className="userIcon"><img src={process.env.PUBLIC_URL + '/icones/Ellipse 1.png'}    alt="user"/></div>
                         <span className="d-none d-lg-block">Karim Kouyaté</span>
                         <i className="fas fa-chevron-down d-none d-lg-block"></i>
                         

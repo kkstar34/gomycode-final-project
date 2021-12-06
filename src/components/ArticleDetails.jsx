@@ -41,7 +41,7 @@ export const ArticleDetails = () => {
         <div>
             <NavDetails/>
             <Basket/>
-            <Header/>
+        
 
 
 
@@ -60,19 +60,19 @@ export const ArticleDetails = () => {
                             
                             <div className="article-detail--product__small">
                                 <div className="card-small">
-                                    <img src="images/jupe.png" alt="img" onclick="myFunction(this) "/>
+                                    <img  src={process.env.PUBLIC_URL + '/images/jupe.png'} alt="img" onclick="myFunction(this) "/>
                                 </div>
         
                                 <div className="card-small">
-                                    <img src="images/jupe.png" alt="img" onclick="myFunction(this) "/>
+                                    <img  src={process.env.PUBLIC_URL + '/images/jupe.png'} alt="img" onclick="myFunction(this) "/>
                                 </div>
         
                                 <div className="card-small">
-                                    <img src="images/xbanner-01.jpg.pagespeed.ic.Uj5FE94mgU.webp" alt="img" onclick="myFunction(this) "/>
+                                    <img  src={process.env.PUBLIC_URL + '/images/jupe.png'} alt="img" onclick="myFunction(this) "/>
                                 </div>
         
                                 <div className="card-small">
-                                    <img src="images/jupe.png" alt="img" onclick="myFunction(this) "/>
+                                    <img  src={process.env.PUBLIC_URL + '/images/jupe.png'} alt="img" onclick="myFunction(this) "/>
                                 </div>
                             </div>
                         </div>
@@ -109,7 +109,7 @@ export const ArticleDetails = () => {
                         <div className="card--product wow fadeInDown">
                             <div className="card--product__illustration">
                                 <a href="details--articles.html">  
-                                    <img src="images/jupe.png" alt="products--images"/>
+                                    <img src={process.env.PUBLIC_URL + '/images/jupe.png'} alt="products--images"/>
                                 </a>
                             </div>
 
@@ -139,7 +139,7 @@ export const ArticleDetails = () => {
                         <div className="card--product wow fadeInDown">
                             <div className="card--product__illustration">
                                 <a href="details--articles.html">  
-                                    <img src="images/jupe.png" alt="products--images"/>
+                                    <img src={process.env.PUBLIC_URL + '/images/jupe.png'} alt="products--images"/>
                                 </a>
                             </div>
 
@@ -169,7 +169,7 @@ export const ArticleDetails = () => {
                         <div className="card--product wow fadeInDown">
                             <div className="card--product__illustration">
                                 <a href="details--articles.html">  
-                                    <img src="images/jupe.png" alt="products--images"/>
+                                    <img  src={process.env.PUBLIC_URL + '/images/jupe.png'} alt="products--images"/>
                                 </a>
                             </div>
 
@@ -199,7 +199,7 @@ export const ArticleDetails = () => {
                         <div className="card--product wow fadeInDown">
                             <div className="card--product__illustration">
                                 <a href="details--articles.html">  
-                                    <img src="images/jupe.png" alt="products--images"/>
+                                    <img  src={process.env.PUBLIC_URL + '/images/jupe.png'} alt="products--images"/>
                                 </a>
                             </div>
 
