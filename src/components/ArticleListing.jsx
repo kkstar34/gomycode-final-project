@@ -8,43 +8,32 @@ import Nav from './Nav';
 import { useSelector, useDispatch } from 'react-redux';
 import loadArticles from './../redux/actions/loadArticles';
 import axios from 'axios';
+import { fetchCategories, fetchCategory } from './../slices/category';
+import { useParams } from 'react-router';
+import ArticleLoader from './loaders/ArticleLoader';
 
 const ArticleListing = () => {
 
     const dispatch = useDispatch();
+    const categorySlug = useParams().slug
 
   useEffect(() => {
 
   
-    async  function fetchData() 
-    {
-      const articles = await axios.get('https://fakestoreapi.com/products');
-
-      return  await articles.data;
-
-    }
-    
-
-
-
-     fetchData().then((data) => {dispatch(loadArticles(data))});
+   dispatch(fetchCategory(categorySlug));
+   dispatch(fetchCategories());
 
     
-    
+  }, [dispatch, categorySlug])
 
-      // 
-
-
-    
-  }, [])
-
-  const articles = useSelector(state => state.allProducts.articles)
+  const articles = useSelector(state => state.category.articles)
+  const categoryData = useSelector(state => state.category)
 
 
-  console.log(articles);
+  
     return (
        <>
- <Nav/>
+        <Nav categories={categoryData.categories}/>
         <Basket/>
         <Header/>
         <section className="" >  
@@ -56,6 +45,28 @@ const ArticleListing = () => {
                          <Article article={article}/>
                     
                        
+                    </div>
+                  )}
+
+              {categoryData.loading ?  
+                    <>
+                        <div className="col-xs-12 col-sm-6 col-md-6 col-lg-3" >
+                            <ArticleLoader/> 
+                        </div>
+                        <div className="col-xs-12 col-sm-6 col-md-6 col-lg-3" >
+                            <ArticleLoader/> 
+                        </div>
+                        <div className="col-xs-12 col-sm-6 col-md-6 col-lg-3" >
+                            <ArticleLoader/> 
+                        </div>
+                        <div className="col-xs-12 col-sm-6 col-md-6 col-lg-3" >
+                            <ArticleLoader/> 
+                        </div>
+                    </>      
+                     : 
+                     categoryData.articles.map((article)=> 
+                    <div className="col-xs-12 col-sm-6 col-md-6 col-lg-3" key={article.id}>
+                         <Article article={article}/>
                     </div>
                   )}
                 </div>

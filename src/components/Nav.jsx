@@ -1,5 +1,6 @@
-const Nav = ()=> {
+import { Link } from 'react-router-dom';
 
+const Nav = ({categories})=> {
 
     return (
         <nav className="navigation ">
@@ -14,7 +15,7 @@ const Nav = ()=> {
                     </div>
     
                     <div className="navigation--top__logo">
-                        <a href="#"><img  src={process.env.PUBLIC_URL + '/images/Groupe-1.png'} alt="logo"/></a>
+                        <Link to="/"> <img  src={process.env.PUBLIC_URL + '/images/Groupe-1.png'} alt="logo"/> </Link>
                     </div>
     
                     <div className="navigation--top__items">
@@ -58,10 +59,10 @@ const Nav = ()=> {
                     </div>
     
                     <ul className="navigation--bottom__list">
-                        <li> <a href="shop.html">Catégories</a> </li>
-                        <li> <a href="shop.html">Vêtements</a> </li>
-                        <li> <a href="shop.html">Accéssoires</a> </li>
-                        <li> <a href="shop.html">Chaussures</a> </li>
+                    {categories.map(category => {
+                        return  <><li> <Link to={`/category/products/${category}`}> {category}</Link></li></>
+                    })
+                    }
                     </ul>
     
                     <form action="" className="select--language">

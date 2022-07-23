@@ -14,11 +14,10 @@ import loadArticles from './redux/actions/loadArticles';
 import { Route, Routes } from 'react-router-dom';
 import ArticleDetails from './components/ArticleDetails';
 import ArticleListing from './components/ArticleListing';
+import Home from './pages/Home';
 
 function App() {
-  // const [articles, setArticles] = useState([
-  //   {},{},{},{},{},{},{},{}
-  // ])
+ 
 
   
   
@@ -27,8 +26,9 @@ function App() {
 
       <Routes>
         <Route path="/article/:id"  element={<ArticleDetails/>}  />
-        <Route exact path="/"  element={<ArticleListing/>}  />        
-        </Routes>
+        <Route exact path="/category/products/:slug"  element={<ArticleListing/>}  />  
+        <Route exact path="/"  element={<Home/>}  />        
+      </Routes>
         
         
 
