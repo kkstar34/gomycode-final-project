@@ -1,20 +1,20 @@
 {
   "files": {
-    "main.css": "https://lmc-react.netlify.app/static/css/main.6dea0f05.chunk.css",
-    "main.js": "https://lmc-react.netlify.app/static/js/main.1709501e.chunk.js",
-    "main.js.map": "https://lmc-react.netlify.app/static/js/main.1709501e.chunk.js.map",
-    "runtime-main.js": "https://lmc-react.netlify.app/static/js/runtime-main.1de75e71.js",
-    "runtime-main.js.map": "https://lmc-react.netlify.app/static/js/runtime-main.1de75e71.js.map",
-    "static/js/2.463d8b3f.chunk.js": "https://lmc-react.netlify.app/static/js/2.463d8b3f.chunk.js",
-    "static/js/2.463d8b3f.chunk.js.map": "https://lmc-react.netlify.app/static/js/2.463d8b3f.chunk.js.map",
-    "index.html": "https://lmc-react.netlify.app/index.html",
-    "static/css/main.6dea0f05.chunk.css.map": "https://lmc-react.netlify.app/static/css/main.6dea0f05.chunk.css.map",
-    "static/js/2.463d8b3f.chunk.js.LICENSE.txt": "https://lmc-react.netlify.app/static/js/2.463d8b3f.chunk.js.LICENSE.txt"
+    "main.css": "https://lmc-shop-react.netlify.app/static/css/main.6dea0f05.chunk.css",
+    "main.js": "https://lmc-shop-react.netlify.app/static/js/main.9723cb1f.chunk.js",
+    "main.js.map": "https://lmc-shop-react.netlify.app/static/js/main.9723cb1f.chunk.js.map",
+    "runtime-main.js": "https://lmc-shop-react.netlify.app/static/js/runtime-main.ad81fad8.js",
+    "runtime-main.js.map": "https://lmc-shop-react.netlify.app/static/js/runtime-main.ad81fad8.js.map",
+    "static/js/2.463d8b3f.chunk.js": "https://lmc-shop-react.netlify.app/static/js/2.463d8b3f.chunk.js",
+    "static/js/2.463d8b3f.chunk.js.map": "https://lmc-shop-react.netlify.app/static/js/2.463d8b3f.chunk.js.map",
+    "index.html": "https://lmc-shop-react.netlify.app/index.html",
+    "static/css/main.6dea0f05.chunk.css.map": "https://lmc-shop-react.netlify.app/static/css/main.6dea0f05.chunk.css.map",
+    "static/js/2.463d8b3f.chunk.js.LICENSE.txt": "https://lmc-shop-react.netlify.app/static/js/2.463d8b3f.chunk.js.LICENSE.txt"
   },
   "entrypoints": [
-    "static/js/runtime-main.1de75e71.js",
+    "static/js/runtime-main.ad81fad8.js",
     "static/js/2.463d8b3f.chunk.js",
     "static/css/main.6dea0f05.chunk.css",
-    "static/js/main.1709501e.chunk.js"
+    "static/js/main.9723cb1f.chunk.js"
   ]
 }
