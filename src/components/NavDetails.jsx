@@ -91,9 +91,9 @@ const NavDetails = ({categories}) => {
                 </div>
 
                 <ul className="navigation--bottom__list">
-                    {categories.map(category => {
+                    {categories.map((category, i) => {
                         
-                       return <li key={category.id}> <Link to="category"> {category}</Link></li>
+                       return <li key={i}> <Link to="category"> {category}</Link></li>
                         
                     })
                     }

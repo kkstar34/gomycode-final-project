@@ -1,20 +1,20 @@
 {
   "files": {
     "main.css": "https://lmc-shop-react.netlify.app/static/css/main.6dea0f05.chunk.css",
-    "main.js": "https://lmc-shop-react.netlify.app/static/js/main.c2b31149.chunk.js",
-    "main.js.map": "https://lmc-shop-react.netlify.app/static/js/main.c2b31149.chunk.js.map",
+    "main.js": "https://lmc-shop-react.netlify.app/static/js/main.915588e3.chunk.js",
+    "main.js.map": "https://lmc-shop-react.netlify.app/static/js/main.915588e3.chunk.js.map",
     "runtime-main.js": "https://lmc-shop-react.netlify.app/static/js/runtime-main.ad81fad8.js",
     "runtime-main.js.map": "https://lmc-shop-react.netlify.app/static/js/runtime-main.ad81fad8.js.map",
-    "static/js/2.f88beb8b.chunk.js": "https://lmc-shop-react.netlify.app/static/js/2.f88beb8b.chunk.js",
-    "static/js/2.f88beb8b.chunk.js.map": "https://lmc-shop-react.netlify.app/static/js/2.f88beb8b.chunk.js.map",
+    "static/js/2.e6d1dffd.chunk.js": "https://lmc-shop-react.netlify.app/static/js/2.e6d1dffd.chunk.js",
+    "static/js/2.e6d1dffd.chunk.js.map": "https://lmc-shop-react.netlify.app/static/js/2.e6d1dffd.chunk.js.map",
     "index.html": "https://lmc-shop-react.netlify.app/index.html",
     "static/css/main.6dea0f05.chunk.css.map": "https://lmc-shop-react.netlify.app/static/css/main.6dea0f05.chunk.css.map",
-    "static/js/2.f88beb8b.chunk.js.LICENSE.txt": "https://lmc-shop-react.netlify.app/static/js/2.f88beb8b.chunk.js.LICENSE.txt"
+    "static/js/2.e6d1dffd.chunk.js.LICENSE.txt": "https://lmc-shop-react.netlify.app/static/js/2.e6d1dffd.chunk.js.LICENSE.txt"
   },
   "entrypoints": [
     "static/js/runtime-main.ad81fad8.js",
-    "static/js/2.f88beb8b.chunk.js",
+    "static/js/2.e6d1dffd.chunk.js",
     "static/css/main.6dea0f05.chunk.css",
-    "static/js/main.c2b31149.chunk.js"
+    "static/js/main.915588e3.chunk.js"
   ]
 }
