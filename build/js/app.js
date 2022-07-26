@@ -8,89 +8,8 @@ function myFunction(smallImg)
 
 
 
-$(document).ready(function () {
-
-    $(".filter").on("click",()=>{
-    
-        $(".left--part").css({
-            left:"0%"
-        })
-    })
 
 
-    
-    $(".left--part__sortie").on("click",()=>{
-        
-        $(".left--part").css({
-            left:"-100%"
-        })
-    })
-    
-})
-
-// ******************
-
-$(document).ready(function () {
-
-    $(".basket").on("click",()=>{
-    
-        $(".basket--responsive").css({
-            right:"0%"
-        })
-    })
-
-
-    
-    $(".basket--sortie").on("click",()=>{
-        
-        $(".basket--responsive").css({
-            right:"-100%"
-        })
-    })
-    
-})
-
-
-$(document).ready(function () {
-
-    $(".navigation--top__items--responsivesearch").on("click",()=>{
-    
-        $(".navigation--top__shop").css({
-            right:"0%"
-        })
-    })
-
-
-    
-    $(".navigation--top__shop--i").on("click",()=>{
-        
-        $(".navigation--top__shop").css({
-            right:"-100%"
-        })
-    })
-    
-})
-
-
-$(document).ready(function () {
-
-    $(".navigation--top__items--responsivebars").on("click",()=>{
-    
-        $(".navigation--bottom").css({
-            right:"0%"
-        })
-    })
-
-
-    
-    $(".navigation--bottom__sortie").on("click",()=>{
-        
-        $(".navigation--bottom").css({
-            right:"-100%"
-        })
-    })
-    
-})
 
 
 

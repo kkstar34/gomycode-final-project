@@ -1,19 +1,31 @@
 import React from 'react'
 import { Link } from 'react-router-dom';
+import { useState } from 'react';
 
 
 const NavDetails = ({categories}) => {
+    const [show, setShow] = useState(false);
+    const [showNavigation, setshowNavigation] = useState(false);
+    const toggleSearch = () => {
+        console.log('toggleSearch')
+        setShow(!show);
+    }
+
+    const toggleNavigation = () => {
+        console.log('toggleNavigation')
+        setshowNavigation(!showNavigation);
+    }
     return (
         <div>
              <nav className="navigation ">
         <div className="container">
             <div className="navigation--top">
-                <div className="navigation--top__shop">
+                <div className={show ? "navigation--top__shop search-show" : "navigation--top__shop"}>
                     <form action="">
                         <input type="text" placeholder="Rechercher un produit..."/>
                         <button type="submit"><i className="fa fa-search"></i></button>
                     </form>
-                    <i className="far fa-times-circle navigation--top__shop--i"></i>
+                    <i className="far fa-times-circle navigation--top__shop--i" onClick={toggleSearch}></i>
                 </div>
 
                 <div className="navigation--top__logo">
@@ -22,13 +34,13 @@ const NavDetails = ({categories}) => {
 
                 <div className="navigation--top__items">
                     <form action="" className="select--language">
-                        <select name="langues" id="select--language">
+                        <select name="langues" >
                             <option value="opt1">Français</option>
                             <option value="opt1">Anglais</option>
                             <option value="opt1">Chinois</option>
                         </select>
 
-                        <select name="xof" id="select--language">
+                        <select name="xof" >
                             <option value="opt1">XOF</option>
                             <option value="opt1">USD</option>
                             <option value="opt1">STR</option>
@@ -56,7 +68,7 @@ const NavDetails = ({categories}) => {
                                     
                                 </li>
                                 <li>
-                                    <a href="#" className="link-menu">Se déconnecter</a>
+                                    <a href="#empty" className="link-menu">Se déconnecter</a>
                                     
                                 </li>
                             </ul>
@@ -65,24 +77,24 @@ const NavDetails = ({categories}) => {
 
                     <div className="navigation--top__items--responsive">
                         <ul >
-                            <li className="navigation--top__items--responsivesearch"><i className="fa fa-search"></i></li>
-                            <li className="navigation--top__items--responsivebars"><i className="fas fa-bars"></i></li>
+                            <li className="navigation--top__items--responsivesearch" onClick={toggleSearch}><i className="fa fa-search"></i></li>
+                            <li className="navigation--top__items--responsivebars" onClick={toggleNavigation}><i className="fas fa-bars"></i></li>
                         </ul>
                     </div>
                 </div>
             </div>
           
-            <div className="navigation--bottom disp--none">
+            <div className={showNavigation ? "navigation--bottom disp--none show-navigation": "navigation--bottom disp--none"} >
 
                 <div className="navigation--bottom__sortie">
-                    <i className="far fa-times-circle "></i>
+                    <i className="far fa-times-circle " onClick={toggleNavigation}></i>
                 </div>
 
                 <ul className="navigation--bottom__list">
                     {categories.map(category => {
-                        <>
-                        <li> <Link to="category"> {category}</Link></li>
-                        </>
+                        
+                       return <li key={category.id}> <Link to="category"> {category}</Link></li>
+                        
                     })
                     }
                   
@@ -90,13 +102,13 @@ const NavDetails = ({categories}) => {
                 </ul>
 
                 <form action="" className="select--language">
-                    <select name="langues" id="select--language">
+                    <select name="langues" >
                         <option value="opt1">Français</option>
                         <option value="opt1">Anglais</option>
                         <option value="opt1">Chinois</option>
                     </select>
 
-                    <select name="xof" id="select--language">
+                    <select name="xof" >
                         <option value="opt1">XOF</option>
                         <option value="opt1">USD</option>
                         <option value="opt1">STR</option>

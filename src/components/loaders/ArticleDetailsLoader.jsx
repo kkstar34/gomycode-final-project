@@ -1,5 +1,5 @@
 import React from 'react'
-import {Stack, Skeleton} from '@mui/material'
+import {Skeleton} from '@mui/material'
 function ArticleDetailsLoader() {
   return (
     <div className="container">

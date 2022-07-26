@@ -6,8 +6,7 @@ import Header from './Header';
 import Basket from './Basket';
 import Nav from './Nav';
 import { useSelector, useDispatch } from 'react-redux';
-import loadArticles from './../redux/actions/loadArticles';
-import axios from 'axios';
+
 import { fetchCategories, fetchCategory } from './../slices/category';
 import { useParams } from 'react-router';
 import ArticleLoader from './loaders/ArticleLoader';
@@ -35,7 +34,7 @@ const ArticleListing = () => {
        <>
         <Nav categories={categoryData.categories}/>
         <Basket/>
-        <Header/>
+        <Header name={categorySlug}/>
         <section className="" >  
             <div className="container">
                 <div className="row">

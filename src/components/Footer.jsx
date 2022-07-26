@@ -4,7 +4,7 @@ const Footer = ()=> {
 
         <footer className="wow fadeInDown">
         <div className="container">
-            <p>Tous droits réservés par &copy; <a href="#">LMC-shop</a></p>
+            <p>Tous droits réservés par &copy; <a href="#empty">LMC-shop</a></p>
         </div>
     </footer>
     )

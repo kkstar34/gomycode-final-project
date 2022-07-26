@@ -1,7 +1,16 @@
+import { useState } from "react";
+
 const Basket = ()=> {
+
+    const [show, setShow] = useState(false);
+
+    const toggleBasket = ()=> {
+     
+        setShow(!show);
+    }
     return  (
         <>
-        <div className="basket wow fadeInLeft">
+        <div className="basket wow fadeInLeft" onClick={toggleBasket}>
         <div className="position-relative">
             <p>
                 <i className="fas fa-shopping-bag"></i>
@@ -10,14 +19,14 @@ const Basket = ()=> {
         </div>
     </div>
 
-    <div className="basket--responsive">
+    <div className={show ? `basket--responsive basket-show` : `basket--responsive`}>
         <div className="basket--responsive__title">
             <div className="d-flex">
                 <i className="fas fa-shopping-bag"></i>
                 <p>3 Articles</p>
             </div>
 
-            <div className="basket--sortie">
+            <div className="basket--sortie" onClick={toggleBasket}>
                 <i className="far fa-times-circle"></i>
             </div>
         </div>

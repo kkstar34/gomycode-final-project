@@ -9,7 +9,7 @@ const Article = ({article})=> {
         // wow fadeInDown
         <div className="card--product ">
                             <div className="card--product__illustration">
-                              <Link to={`/article/${article.id}`}> <a href="details--articles.html"><img src={article.image} alt="products--images"/></a>  </Link >
+                              <Link to={`/article/${article.id}`}> <img src={article.image} alt="products--images"/> </Link >
                             </div>
 
                             <div className="card--product__description">

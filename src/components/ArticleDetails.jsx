@@ -1,4 +1,4 @@
-import React, { useEffect, useState } from 'react'
+import React, { useEffect } from 'react'
 
 import Basket from './Basket';
 
@@ -20,16 +20,6 @@ export const ArticleDetails = () => {
 
     const articleId = useParams().id;
     const dispatch = useDispatch();
-
-    
-    // useEffect(() => {
-    //     async function fetchData(){
-    //         const articles = await axios.get(`https://fakestoreapi.com/products/${articleId}`);
-    //         return  await articles.data;
-    //     }
-    //     fetchData().then((data) => {dispatch(selectProduct(data));});  
-    // }, [])
-
 
     const data = useSelector(state => state.product);
     

@@ -2,11 +2,12 @@ const Connexion = () => {
   return(
 
   <div
-    className="modal fade"
+    className="modal fade "
     id="exampleModal"
     tabIndex="-1"
     aria-labelledby="exampleModalLabel"
     aria-hidden="true"
+    
   >
     <div className="modal-dialog">
       <div className="modal-content">
@@ -25,7 +26,7 @@ const Connexion = () => {
         </div>
         <div className="modal-body">
           <p data-toggle="modal" data-target="#exampleModal3">
-            Vous n'avez pas de compte ? <a href="#">Inscrivez-vous</a>
+            Vous n'avez pas de compte ? <a href="#empty">Inscrivez-vous</a>
           </p>
 
           <form action="">
@@ -58,7 +59,7 @@ const Connexion = () => {
                 Se connecter
               </button>
               <p className="mt-4 mb-4">
-                <a href="">Mot de passe oublié</a>
+                <a href="#empty">Mot de passe oublié</a>
               </p>
             </div>
           </form>
