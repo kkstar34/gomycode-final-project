@@ -65,7 +65,7 @@ const Nav = ({categories})=> {
                     </div>
                 </div>
                
-                <div className={showNavigation ? "navigation--bottom disp--none show-navigation": "navigation--bottom disp--none"}>
+                <div className={showNavigation ? "navigation--bottom  show-navigation": "navigation--bottom "}>
     
                     <div className="navigation--bottom__sortie">
                         <i className="far fa-times-circle "  onClick={toggleNavigation}></i>

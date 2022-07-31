@@ -1,8 +1,8 @@
 {
   "files": {
     "main.css": "https://lmc-shop-react.netlify.app/static/css/main.6dea0f05.chunk.css",
-    "main.js": "https://lmc-shop-react.netlify.app/static/js/main.915588e3.chunk.js",
-    "main.js.map": "https://lmc-shop-react.netlify.app/static/js/main.915588e3.chunk.js.map",
+    "main.js": "https://lmc-shop-react.netlify.app/static/js/main.9f83a6a2.chunk.js",
+    "main.js.map": "https://lmc-shop-react.netlify.app/static/js/main.9f83a6a2.chunk.js.map",
     "runtime-main.js": "https://lmc-shop-react.netlify.app/static/js/runtime-main.ad81fad8.js",
     "runtime-main.js.map": "https://lmc-shop-react.netlify.app/static/js/runtime-main.ad81fad8.js.map",
     "static/js/2.e6d1dffd.chunk.js": "https://lmc-shop-react.netlify.app/static/js/2.e6d1dffd.chunk.js",
@@ -15,6 +15,6 @@
     "static/js/runtime-main.ad81fad8.js",
     "static/js/2.e6d1dffd.chunk.js",
     "static/css/main.6dea0f05.chunk.css",
-    "static/js/main.915588e3.chunk.js"
+    "static/js/main.9f83a6a2.chunk.js"
   ]
 }
